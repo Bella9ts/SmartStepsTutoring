@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartSteps Pvt Ltd</title>
+  <meta name="description" content="SmartSteps Pvt Ltd offers personalised tutoring, homework support, exam preparation, and free learning assessments for children." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-top">
+      <a class="logo-wrap" href="#home" aria-label="SmartSteps home">
+        <img src="assets/logo.png" alt="SmartSteps Pvt Ltd logo" class="logo" />
+      </a>
+      <div class="contact-pills">
+        <a href="tel:+001234567890">Phone: +00 1234 567890</a>
+        <a href="https://wa.me/001234567890" target="_blank" rel="noreferrer">WhatsApp: +00 1234 567890</a>
+        <a href="mailto:info@smartsteps.com">Email: info@smartsteps.com</a>
+      </div>
+    </div>
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#support">Home Work & Exam Support</a>
+      <a href="#assessment">Book a Free Assessment</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <p class="eyebrow">SmartSteps Pvt Ltd</p>
+          <h1>Unlock your child’s <span>potential</span></h1>
+          <p>We help children grow in confidence, understand key subjects clearly, and develop better study habits through personalised support.</p>
+          <div class="button-row">
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
+            <a href="#assessment" class="btn btn-secondary">Book Free Assessment</a>
+          </div>
+        </div>
+        <div class="hero-logo-card">
+          <img src="assets/logo.png" alt="SmartSteps student achievement illustration" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container two-cards">
+        <article class="feature-card blue-card">
+          <div class="icon">📘</div>
+          <h2>Individual Tutoring</h2>
+          <p>One-to-one lessons designed around your child’s current level, learning style, and academic goals.</p>
+          <a href="#support" class="btn btn-blue">Learn More</a>
+        </article>
+        <article class="feature-card yellow-card">
+          <div class="icon">😊</div>
+          <h2>Fun Learning</h2>
+          <p>Friendly, interactive sessions that make learning less stressful and more engaging for children.</p>
+          <a href="#support" class="btn btn-primary">Learn More</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="support" class="section">
+      <div class="container center-title">
+        <p class="eyebrow">SmartSteps Support</p>
+        <h2>Homework & Exam Preparation Support</h2>
+        <p>Helping children understand lessons clearly, prepare with confidence, and build better study routines.</p>
+      </div>
+      <div class="container support-grid">
+        <button class="support-selector active" data-panel="homework-panel">
+          <span class="icon">📘</span>
+          <strong>Homework Support</strong>
+          <small>Q&A sessions, focused learning, and quick feedback.</small>
+        </button>
+        <button class="support-selector" data-panel="exam-panel">
+          <span class="icon">🏆</span>
+          <strong>Exam Preparation Support</strong>
+          <small>Revision tools, study plans, and exam confidence.</small>
+        </button>
+      </div>
+      <div class="container panel-card">
+        <div id="homework-panel" class="support-panel active">
+          <h3>Homework Support Includes</h3>
+          <ul class="tick-grid">
+            <li>Q and A sessions</li><li>Focused learning</li><li>Simpler concepts</li><li>Prompt feedback</li><li>Individual attempt encouragement</li>
+          </ul>
+        </div>
+        <div id="exam-panel" class="support-panel">
+          <h3>Exam Preparation Includes</h3>
+          <ul class="tick-grid yellow-list">
+            <li>Revision support</li><li>Memory cards</li><li>Note-taking tips</li><li>Study plans and timelines</li><li>Peer brainstorming</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="assessment" class="section assessment-section">
+      <div class="container assessment-card">
+        <p class="eyebrow">SmartSteps Assessment</p>
+        <h2>Assess Your Child’s Learning Needs</h2>
+        <p>Every child learns differently. This quick assessment helps us understand your child’s current level, strengths, and areas that need support.</p>
+        <a id="google-form-link" href="https://forms.gle/REPLACE-WITH-YOUR-GOOGLE-FORM-LINK" target="_blank" rel="noreferrer" class="btn btn-primary big-btn">Start Assessment</a>
+      </div>
+      <div class="container reassurance-grid">
+        <article><h3>Personalised Insights</h3><p>Understand your child’s learning style and current level.</p></article>
+        <article><h3>Clear Learning Plan</h3><p>Get a structured plan tailored to your child’s needs.</p></article>
+        <article><h3>No Obligation</h3><p>Free assessment with no pressure to commit.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="tutor-placeholder">Tutor Image</div>
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>About the Tutor</h2>
+          <p>Hi, I am <strong>Name</strong>, and I will be your tutor. I have more than 5 years of experience in teaching and supporting students in their academic learning journey.</p>
+          <button id="aims-toggle" class="btn btn-primary">Aims & Objectives</button>
+          <div id="aims-panel" class="aims-panel">
+            <ul>
+              <li>Provide personalised learning support for every child</li>
+              <li>Build confidence in academic abilities</li>
+              <li>Simplify complex concepts for better understanding</li>
+              <li>Encourage independent learning and thinking</li>
+              <li>Create a positive and supportive learning environment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container center-title">
+        <p class="eyebrow">Contact</p>
+        <h2>Contact Us</h2>
+      </div>
+      <div class="container contact-grid">
+        <div>
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
+              width="100%"
+              height="300"
+              style="border:0; border-radius:16px;"
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="contact-details">
+            <p><strong>Website:</strong> yourwebsite.com</p>
+            <p><strong>Phone:</strong> +00 1234 567890</p>
+            <p><strong>WhatsApp:</strong> +00 1234 567890</p>
+            <p><strong>Facebook:</strong> facebook.com/yourpage</p>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:info@smartsteps.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Phone Number" />
+          <input type="text" name="source" placeholder="How did you find us?" />
+          <textarea name="query" rows="5" placeholder="Your Query" required></textarea>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+      </div>
+      <p class="response-note">We will reach out to you as soon as possible.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="SmartSteps Pvt Ltd logo" />
+        <p>Empowering children through personalised tutoring, homework support, and exam preparation.</p>
+      </div>
+      <p>© 2026 SmartSteps Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
