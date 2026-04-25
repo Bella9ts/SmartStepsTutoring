@@ -68,15 +68,24 @@ p { color: var(--muted); line-height: 1.7; font-size: 17px; }
 .reassurance-grid article { background: var(--white); border: 1px solid var(--yellow); }
 
 .tutor-placeholder {
-  max-width: 350px;
-  margin: 0 auto;
+  width: 350px !important;
+  max-width: 100% !important;
+  height: 420px !important;
+  margin: 0 auto !important;
+  padding: 10px;
+  border: 2px solid #FDB515;
+  border-radius: 24px;
+  background: white;
+  overflow: hidden;
 }
 
+.tutor-placeholder img,
 .tutor-image {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
   object-fit: cover;
+  border-radius: 18px;
 }
 
 .aims-panel { display: none; margin-top: 22px; padding: 24px; border-radius: 22px; background: var(--white); border: 1px solid var(--yellow); }
