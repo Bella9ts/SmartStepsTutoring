@@ -7,6 +7,30 @@
   <meta name="description" content="SmartSteps Pvt Ltd offers personalised tutoring, homework support, exam preparation, and free learning assessments for children." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init({
+      publicKey: "cIoSer08U3fpB1ntj"
+    });
+  
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      emailjs.sendForm("service_35twu8c", "template_blxrlqs", this)
+        .then(function() {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset();
+        })
+        .catch(function(error) {
+          alert("Failed to send message. Please try again.");
+          console.error("EmailJS error:", error);
+        });
+    });
+  </script>
+
+  
 <body>
   <header class="site-header">
     <div class="container header-top">
@@ -212,7 +236,7 @@
           <button type="submit" class="btn btn-primary full-width">Send Message</button>
         </form>
         -->
-
+        <!--
         <form class="contact-form" action="https://formspree.io/f/xrerjwrl" method="POST">
           <input type="hidden" name="_subject" value="New Contact Form - SmartSteps">
           <input type="text" name="name" placeholder="Full Name" required />
@@ -222,6 +246,15 @@
           <textarea name="query" rows="5" placeholder="Your Query" required></textarea>
           <button type="submit" class="btn btn-primary full-width">Send Message</button>
         </form>
+        -->
+
+        <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number" />
+        <input type="text" name="source" placeholder="How did you find us?" />
+        <textarea name="query" rows="5" placeholder="Your Query" required></textarea>
+        <button type="submit" class="btn btn-primary full-width">Send Message</button>
       </div>
       <p class="response-note">We will reach out to you as soon as possible.</p>
     </section>
