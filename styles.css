@@ -108,4 +108,88 @@ input:focus, textarea:focus { outline: 3px solid rgba(253,181,21,.25); }
   .logo { height: 80px; }
   .section { padding: 52px 0; scroll-margin-top: 240px; }
   .hero-card, .assessment-card { padding: 28px; }
+
+
+
 }
+
+
+/* =========================
+   VACANCIES
+========================= */
+
+.vacancies-section {
+  background: #fff8e8;
+}
+
+.vacancies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.vacancy-card {
+  background: #ffffff;
+  border: 1px solid #fdb515;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 12px 28px rgba(0, 74, 152, 0.10);
+}
+
+.vacancy-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdb515;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.vacancy-card h3 {
+  color: #004a98;
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.vacancy-card h4 {
+  color: #4b5563;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.vacancy-card p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 22px 0;
+}
+
+.vacancy-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.vacancy-details span {
+  background: #eaf4ff;
+  color: #004a98;
+  padding: 9px 13px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+
+  .vacancies-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+
